@@ -1,5 +1,5 @@
-#Face recognition project on NVIDIA Jetson Nano
-##Projects structure
+#F ace recognition project on NVIDIA Jetson Nano
+## Projects structure
 Project based on **face_recognition** library: [https://github.com/ageitgey/face_recognition](https://github.com/ageitgey/face_recognition " ageitgey /
 face_recognition ")
 - ***train.py*** - script for  train KNN-classifier
@@ -8,7 +8,7 @@ face_recognition ")
 - ***TestImgs/test...*** - images for testing of trained KNN-classifier using images
 - ***TestImgs/trained_knn_model.clf*** - trained KNN-classifier
 
-###ToDo:
+### ToDo:
 - face detection function using Google Coral USB
 - face recognition function from webcam
 - porting code to Jetson Nano
