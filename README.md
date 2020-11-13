@@ -1,4 +1,4 @@
-#F ace recognition project on NVIDIA Jetson Nano
+# Face recognition project on NVIDIA Jetson Nano
 ## Projects structure
 Project based on **face_recognition** library: [https://github.com/ageitgey/face_recognition](https://github.com/ageitgey/face_recognition " ageitgey /
 face_recognition ")
