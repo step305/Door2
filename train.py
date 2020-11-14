@@ -1,3 +1,4 @@
+import sys
 import math
 from sklearn import neighbors
 import os
@@ -96,12 +97,14 @@ def knn_train(img_dir: str,
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train KNN classifier for face recognition."
                                                  "Using https://github.com/ageitgey/face_recognition")
-    parser.add_argument('--images-path', type=str, dest='img_dir', action='store', required=True,
-                        help='path to images directory')
-    parser.add_argument('--model-path', type=str, dest='model_path', action='store', default='trained_knn_model.clf',
+    parser.add_argument('-ip', '--images-path', type=str, dest='img_dir', action='store',
+                        required=True, help='path to images directory')
+    parser.add_argument('-mp', '--model-path', type=str, dest='model_path', action='store',
+                        default='trained_knn_model.clf',
                         help='file path to store classifier as pickle. Default is "trained_knn_model.clf"')
     args = parser.parse_args()
 
     print("Training KNN classifier...")
     classifier = knn_train(args.img_dir, model_path=args.model_path, n_neighbors=2)
     print("Training complete!")
+    sys.exit(0)
