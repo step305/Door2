@@ -18,6 +18,7 @@ face_recognition ")
 - [scikit-learn](https://scikit-learn.org/stable/)
 - [Pillow library](https://github.com/python-pillow/Pillow) 
 
+### Note
 Model for Google Coral can be downloaded from official site:
 [Edge TPU MobileNet SSD v2 (Faces)](https://github.com/google-coral/test_data/raw/master/ssd_mobilenet_v2_face_quant_postprocess_edgetpu.tflite))
 It should be save to model sub-directory. Name it **ssd_mobilenet_v2_face_quant_postprocess_edgetpu.tflite**.
